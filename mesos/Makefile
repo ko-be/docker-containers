@@ -4,7 +4,8 @@
 # to
 #   major.minor.patch-[rcNNN.]ubuntuYYMM
 MESOS_TAG=`echo "$(VERSION)" | sed -e "s|-[0-9]\+\.[0-9]\+\.[0-9]\+\.|-|"`
-UBUNTU_CODENAME=trusty
+# build mesos base container for xenial, needed for openjdk8 for chronos-yelp31
+UBUNTU_CODENAME=xenial
 all: help
 
 help:
